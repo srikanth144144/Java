@@ -1,0 +1,31 @@
+package Oops;
+
+public class HasRelationship2 {
+
+	public static void main(String[] args) {
+	    Games a = new Games();
+	    Play p = new Play();
+	    p.setBatmenten(a);
+	    p.show();
+	}
+}
+class Games{
+	void batmenten() {
+		System.out.println(" There are two players in batmenten ");
+	}
+}
+class Play{
+	private Games Batmenten;
+
+	public Games getBatmenten() {
+		return Batmenten;
+	}
+
+	public void setBatmenten(Games batmenten) {
+		Batmenten = batmenten;
+	}
+	public void show() {
+		Batmenten.batmenten();
+	}
+	
+}

@@ -1,0 +1,11 @@
+package Projects;
+public class Inter {
+	public static void main(String[] args) {
+		System.out.println(SRR.age);
+	}
+}
+interface SRR{
+	 int age = 24;
+}
+
+

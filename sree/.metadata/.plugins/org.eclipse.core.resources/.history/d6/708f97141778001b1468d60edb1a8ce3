@@ -1,0 +1,39 @@
+package Threads;
+import java.util.Scanner;
+public class Threadbustickets {
+ public static void main(String[] args) {  
+	   Bus b = new Bus("madhu",1);
+	   Bus b1 = new Bus("ashfaaq", 1);
+      Thread t = new Thread(b);
+      Thread t1 = new Thread(b1);
+      t.start();
+      t1.start();
+ }
+}
+class Bus implements Runnable{
+      String person_name;
+      int available_seats = 5;
+      int booked_seats;
+	  public Bus(String person_name, int booked_seats) {
+		this.person_name = person_name;
+		this.booked_seats = booked_seats;
+	}
+		@Override
+	     synchronized public void run() {
+	       System.out.println("Total seats :"+available_seats);		
+			if(available_seats>=booked_seats) {
+				try {
+				System.out.println("seats are booked for  :"+booked_seats+ "for "+person_name);
+				available_seats = available_seats-booked_seats; 
+				System.out.println( "available  seats  :"+ available_seats);
+				Thread.sleep(2000);	
+			     
+			    
+		} catch (InterruptedException e) {
+		e.printStackTrace();	
+		}
+			}else{
+			System.out.println("sorry no ticketsare available you will try next Bus.......");
+		    }
+		}	
+	}	

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Files.FilesDemo&apos; to &apos;FilesDemoOutput&apos;&#x0D;&#x0A;- Original project: &apos;scr&apos;&#x0D;&#x0A;- Original element: &apos;Files.FilesDemo&apos;&#x0D;&#x0A;- Renamed element: &apos;Files.FilesDemoOutput&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;FilesDemo&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Files{FilesDemo.java[FilesDemo" matchStrategy="1" name="FilesDemoOutput" qualified="false" references="true" similarDeclarations="false" stamp="1613110106785" textual="false" version="1.0"/>
+</session>

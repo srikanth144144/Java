@@ -1,0 +1,29 @@
+package Oops;
+
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Scanner sc =new Scanner(System.in);
+		System.out.println("enter the first value");
+		int a1=sc.nextInt();
+		System.out.println("enter the second value");
+		int a2=sc.nextInt();
+		Ab1 c =new Ab1();
+		c.x = a1;
+		c.y = a2;
+		c.display();
+	}
+}
+class Ab1{
+	int x;
+	int y;	
+		
+	
+	public void display() {
+		System.out.println(x+y);
+	}
+}
+

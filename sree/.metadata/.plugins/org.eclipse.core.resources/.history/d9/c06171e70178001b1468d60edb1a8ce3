@@ -1,0 +1,36 @@
+package Threads;
+
+public class Threadbank {
+
+	public static void main(String[] args) {
+	
+
+	}
+
+}
+
+class SBIbank {
+	int Total_amount = 10000 ;
+	public void withdraw( int amount) {
+		System.out.println("withdraw in prograss....");
+		if(Total_amount>=amount) {
+			System.out.println("sorry you have less amount in you are account .. ");
+		}
+		try {
+			wait();
+		}catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		Total_amount=Total_amount-amount;
+		System.out.println("withdraw is completed...");
+		}
+	public void deposite(int amount) {
+		System.out.println("deposit in progress");
+		this.Total_amount=Total_amount+amount;
+		System.out.println("deposit completed");
+		notify();
+	}
+	
+	
+	}
+

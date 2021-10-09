@@ -1,0 +1,30 @@
+package Oops;
+public class InnerClass1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		A23 a = new A23();
+		a.showdata("123654");
+	}
+}
+class A23{
+	private String name = "srikanth";
+	private int id = 12345;
+	void showdata(String pwd ) {
+		if (pwd.equals("123654")) {
+			System.out.println("login succes");		
+		B b = new B();
+		b.show();
+		}else {
+			System.out.println("hey you not access the inner class");
+		}
+	}
+	 private class B{
+		 String lastname = "bodas"; 
+		 void show() {
+			 System.out.println(name);
+			 System.out.println(lastname);
+			 System.out.println(id);
+		 }		
+	}	
+}

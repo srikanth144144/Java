@@ -1,0 +1,42 @@
+package Oops.Test;
+class Bank{
+	 private String name;
+//	 Bank(String name){
+//		 this.name=name;
+//	 }
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void display() {
+		System.out.println(getName());
+	}
+}
+class Employee{
+	String Employee_name;
+//	Employee(String Employee_name){
+//		this.Employee_name = Employee_name;
+//	}
+	public String getEmployee_name() {
+		return Employee_name;
+	}
+	public void setEmployee_name(String employee_name) {
+		Employee_name = employee_name;
+	}
+	public void display1() {
+		System.out.println(getEmployee_name());
+	}
+	
+	 }
+public class Has {
+	public static void main(String[] args) {
+		Bank b =new Bank();
+		b.setName("sbi");
+		Employee e =new Employee();
+		e.setEmployee_name("madhu");
+		
+	System.out.println(e.getEmployee_name() +" "+  "is employee of "+b.getName());
+	}
+}

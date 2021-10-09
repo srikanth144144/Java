@@ -1,0 +1,38 @@
+package Oops;
+
+import java.util.Scanner;
+
+public class HasRelationship2 {
+	public static void main(String[] args) {
+	Scanner sc =  new Scanner(System.in);
+	System.out.println("enter the a,b values");
+	int x1= sc.nextInt();
+	int y1 = sc.nextInt();
+	xy a1 =new xy(10,23);
+	
+}
+}
+class xy{
+	int a =10;
+	int b=15 ;
+	int c = a+b;
+	ab l;
+	mn q;
+	xy(ab l,mn q){
+		this.l=l;
+		this.q=q;
+	}
+	void showdata() {
+		System.out.println(this.c+l.k+q.f);
+	}
+}
+class ab{
+	int i;
+	int j;
+	int k =i*j;
+}
+class mn{
+	int e;
+	int f;
+	int g=e/f;
+}

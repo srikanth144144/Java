@@ -1,0 +1,18 @@
+package Threads;
+public class TheadAnn {
+	public static void main(String[] args) {
+		Thread t= new Thread() {
+		public  void run() {
+			System.out.println("I am in thread one");
+		}	
+		};
+		t.start();
+		Thread t1= new Thread() {
+			public void run() {
+				System.out.println(" I am in thread two");
+			}
+			};
+			t1.start();
+		}
+	}
+

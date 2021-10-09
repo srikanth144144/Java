@@ -1,0 +1,33 @@
+package Threads;
+public class Singleobj {
+	public static void main(String[] args) {
+		Book b = new Book("ticket giving person");
+		Book b1 = new Book("ticket checking person");
+		Thread t1 = new Thread(b);
+		Thread t2 = new Thread(b1);
+		t1.start();
+		t2.start();		
+}
+}
+class Bookseats implements Runnable{
+  int avaiable_seats =1;
+  int booked_seats;  
+publicBookseats (int booked_seats) {
+	this.booked_seats = booked_seats;
+}
+@Override
+public void run() {
+       System.out.println("Total seats"+avaiable_seats);
+		if(avaiable_seats>=booked_seats) {
+			try {
+			System.out.println("seats are booked"+Thread.currentThread().getName());
+		Thread.sleep(2000);
+		
+	} catch (InterruptedException e) {
+	e.printStackTrace();	
+	}
+}	
+
+	}
+
+}

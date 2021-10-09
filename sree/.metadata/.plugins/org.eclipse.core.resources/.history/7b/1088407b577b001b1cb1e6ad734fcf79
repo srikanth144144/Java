@@ -1,0 +1,9 @@
+package Projects;
+public class Inter {
+	
+}
+abstract  class srr{
+	public static void main(String[] args) {
+		System.out.println("haello");
+	}
+}

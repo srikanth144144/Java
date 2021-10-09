@@ -1,0 +1,15 @@
+package Oops;
+public class PolymorphismOverloading1 {
+	public static void main(String[] args) {
+		 PolymorphismOverloading1 p=  new PolymorphismOverloading1();
+		 p.over(12, 123);
+		 p.over(10, 5, 15);
+	}
+	void over(int a , int b) {
+		System.out.println(a+b);
+	}
+	void over(int x , int y,int z) {
+		System.out.println(x+y+z);
+	}
+	
+}

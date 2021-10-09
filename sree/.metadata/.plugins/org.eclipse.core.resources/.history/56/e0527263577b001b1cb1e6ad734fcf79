@@ -1,0 +1,13 @@
+package Projects;
+
+public class Inter {
+
+	public static void main(String[] args) {
+		System.out.println(srikanth.age);
+
+	}
+
+}
+interface srikanth{
+	int age = 24;
+}

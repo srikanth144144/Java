@@ -1,0 +1,13 @@
+package com.string;
+public class Test6 {
+	public static void main(String[] args) {
+			String sr = "srikanth";
+			System.out.println(sr.charAt(2));
+			
+			String st = "amma";
+			System.out.println(st.indexOf(st));
+					
+
+	}
+
+}

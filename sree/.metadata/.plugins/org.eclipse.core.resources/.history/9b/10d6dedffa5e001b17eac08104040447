@@ -1,0 +1,45 @@
+package Oops;
+public class HasRelationship2 {
+	public static void main(String[] args) {
+		xy a = new xy();
+		a.showdata();
+		
+}
+}
+class xy{
+	int a =10;
+	int b=15 ;
+	int c = a+b;
+	ab l;
+	public ab getL() {
+		return l;
+	}
+
+	public void setL(ab l) {
+		this.l = l;
+	}
+
+	public mn getQ() {
+		return q;
+	}
+
+	public void setQ(mn q) {
+		this.q = q;
+	}
+
+	mn q;
+	
+	void showdata() {
+		System.out.println(this.c+l.k+q.f);
+	}
+}
+class ab{
+	int i =5;
+	int j =5;
+	int k =i*j;
+}
+class mn{
+	int e=25;
+	int f =5;
+	int g=e/f;
+}

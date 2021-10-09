@@ -1,0 +1,23 @@
+package Oops;
+
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Test s = new Test();
+		Ab1 s2 = new Ab1();
+		s.display(s2);
+	}
+	public void display(Ab1 s1) {
+
+		System.out.println(s1.x+" + "+s1.y+" =  "+(s1.x+s1.y));
+	}
+}
+class Ab1{
+	 private int x=10;
+	 private int y=20;	
+	
+	
+}
+

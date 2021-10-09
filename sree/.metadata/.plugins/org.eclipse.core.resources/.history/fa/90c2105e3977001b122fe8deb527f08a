@@ -1,0 +1,12 @@
+package com.string;
+public class Test6 {
+	public static void main(String[] args) {
+			String sr = "srikanth bodas";
+			System.out.println(sr.charAt(2));
+			System.out.println(sr.indexOf('a'));
+			System.out.println(sr.lastIndexOf('a'));
+			System.out.println(sr.length());
+			System.out.println(sr.trim());
+	}
+
+}

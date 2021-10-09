@@ -1,0 +1,22 @@
+package Wrapper;
+public class Test {
+	public static void main(String[] args) {
+	   int a = 10;
+	   Integer i = a;
+	   System.out.println(i);
+
+	   Integer j = 256;
+	   int h =j;
+	   System.out.println(h);
+	   
+	   String f="121";
+	   int n =Integer.parseInt(f);
+	   System.out.println(n);
+	   
+	   Integer l = new Integer(556);
+	   String st =l.toString();
+	   System.out.println(st);
+	   
+	}
+
+}

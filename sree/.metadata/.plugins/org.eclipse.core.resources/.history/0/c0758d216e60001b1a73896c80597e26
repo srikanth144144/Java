@@ -1,0 +1,28 @@
+package Oops;
+
+public class PolymorphismStatic {
+    public static void main(String args[]) {
+    	poly1 p=new poly1();
+    	p.display(2,2.2f,"static");
+    	//poly1.sree(5, 5);
+    }
+}
+class poly1{
+	void display(int a,float b,String name) {
+     System.out.println(a+b);
+     System.out.println(name);	
+	}
+	static void sree(int x,int y) {
+		System.out.println(x*y);
+	}
+}
+class Poly2 extends poly1{
+	@Override
+	void display(int a,float b,String name) {
+     System.out.println(a+b);
+     System.out.println(name);	
+		}
+	static void sree(int x,int y) {
+		System.out.println(x*y);
+	}
+}
